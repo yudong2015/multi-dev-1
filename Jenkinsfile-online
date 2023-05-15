@@ -36,7 +36,7 @@ pipeline {
 
         stage ('run maven-pipeline-2') {
             steps {
-                build(job: 'maven-pipeline-2/master2')
+                build(job: 'master2')
             }
         }
  
