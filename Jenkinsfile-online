@@ -33,6 +33,12 @@ pipeline {
                 }
             }
         }
+
+        stage ('run maven-pipeline-2') {
+            steps {
+                build(job: 'maven-pipeline-2')
+            }
+        }
  
         stage ('build & push') {
             steps {
