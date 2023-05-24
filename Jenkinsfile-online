@@ -36,7 +36,7 @@ pipeline {
 
         stage ('run maven-pipeline-2') {
             steps {
-                build(job: 'test-projectg2rdv/maven-pipeline-2/master2', propagate: true, wait: true)
+                build(job: 'test-projvfjk6/test-pl-m2/master2', propagate: true, wait: true)
             }
         }
  
