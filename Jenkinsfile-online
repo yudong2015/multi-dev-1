@@ -7,6 +7,7 @@ pipeline {
 
     parameters {
         string(name:'TAG_NAME',defaultValue: '',description:'')
+        string(name:'RUN_PIPELINE_NAME',defaultValue: 'test-projectg2rdv/maven-pipeline-2/master2',description:'')
     }
 
     environment {
@@ -36,7 +37,7 @@ pipeline {
 
         stage ('run maven-pipeline-2') {
             steps {
-                build(job: 'test-projvfjk6/test-pl-m2/master2', propagate: true, wait: true)
+                build(job: '$RUN_PIPELINE_NAME', propagate: true, wait: true)
             }
         }
  
